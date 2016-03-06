@@ -1,0 +1,2 @@
+# BasicGit
+Just for testings
