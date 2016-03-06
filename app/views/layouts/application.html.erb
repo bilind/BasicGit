@@ -7,7 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= link_to root_path do %>
+	<%= image_tag "logo.png" %>
+<% end %>
+<p>Admin Login</p>
+<p>All Posts</p>
+<%= link_to "New Post", new_post_path %>
+<p>Log out</p>
+<% flash.each do |name, msg|%>
+	<% content_tag(:div, msg, class: "alert") %>
+<% end %>
 <%= yield %>
 
 </body>
